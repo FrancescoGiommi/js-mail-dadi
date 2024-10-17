@@ -35,6 +35,12 @@ if (emailRequest == userMail) {
 }
 
 /* OUTPUT */
+console.log(`
+    userMail: ${userMail}
+    mailListCanLog: ${mailListCanLog}
+    mailListCantLog: ${mailListCantLog}
+    emailRequest: ${emailRequest}
+    `);
 
 /*> Gioco dei dadi
 

@@ -29,19 +29,20 @@ const mailListCantLog = [
 
 /* ELABORAZIONE */
 /* chiedo all'utente la mail */
-/*const emailRequest = prompt("Inserisci la tua email");*/
+const emailRequest = prompt("Inserisci la tua email");
 
 /* controllo che la mail sia nella lista delle mail che possono accedere */
 for (let i = 0; i != emailRequest; i++) {
+  /* se è nella lista delle mail che possono accedere */
   if (emailRequest === mailListCanLog[i]) {
     alert("Questa mail può accedere");
     console.log("Questa mail può accedere");
+    /* se non è nella lista delle mail che possono accedere */
   } else if (emailRequest === mailListCantLog[i]) {
     alert("Questa mail non può accedere");
     console.log("Questa mail non può accedere");
   }
 }
-/* se è nella lsita delle mail che possono accedere */
 
 /* OUTPUT */
 

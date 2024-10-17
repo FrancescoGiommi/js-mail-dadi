@@ -6,16 +6,25 @@ Chiedi all'utente la sua email,
 
 /* RACCOLTA DATI */
 
-/* mail utente*/
+/* mail utente */
 const userMail = "user@libero.it";
 
-/* lista mail*/
-const mailList =
+/* lista mail che possono accedere */
+const mailListCanLog =
   ("user@libero.it", "mail@tiscali.it", "username@gmail.it", "ciao@icloud.it");
+
+/* lista mail che non possono accedere */
+const mailListCantLog =
+  ("user@tiscali.it", "mail@libero.it", "username@icloud.it", "ciao@gmail.it");
 
 /* PROCEDURA */
 
 /* ELABORAZIONE */
+/* chiedo all'utente la mail */
+const emailRequest = prompt("Inserisci la tua email");
+
+/* controllo che la mail sia valida */
+if ()
 
 /* OUTPUT */
 

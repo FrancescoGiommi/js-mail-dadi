@@ -33,8 +33,10 @@ const emailRequest = prompt("Inserisci la tua email");
 
 /* controllo che la mail sia nella lista delle mail che possono accedere */
 for (let i = 0; i <= mailListCanLog.length; i++) {
+  /* se la mail è nella lista può fare il login */
   if (emailRequest == mailListCanLog[i]) {
     console.log("La tua mail può fare il Login");
+    /* altrimenti se la mail non è nella lista non può fare il login */
   } else if (emailRequest == mailListCantLog[i]) {
     console.log("La tua mail non può fare il Login");
   }

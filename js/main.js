@@ -23,8 +23,16 @@ const mailListCantLog =
 /* chiedo all'utente la mail */
 const emailRequest = prompt("Inserisci la tua email");
 
-/* controllo che la mail sia valida */
-if ()
+/* controllo che la mail sia nella lista delle mail che possono accedere */
+/* se è nella lsita delle mail che possono accedere */
+if (emailRequest == userMail) {
+  alert("Questa mail può accedere");
+  console.log("Questa mail può accedere");
+  /* se non è nella lsita delle mail che possono accedere  */
+} else if (emailRequest !== userMail) {
+  alert("Questa mail non può accedere");
+  console.log("Questa mail non può accedere");
+}
 
 /* OUTPUT */
 

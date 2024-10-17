@@ -33,18 +33,19 @@ const emailRequest = prompt("Inserisci la tua email");
 
 /* controllo che la mail sia nella lista delle mail che possono accedere */
 for (let i = 0; i != emailRequest; i++) {
-  /* se è nella lista delle mail che possono accedere */
-  if (emailRequest === mailListCanLog[i]) {
-    alert("Questa mail può accedere");
-    console.log("Questa mail può accedere");
-    /* se non è nella lista delle mail che possono accedere */
-  } else if (emailRequest === mailListCantLog[i]) {
-    alert("Questa mail non può accedere");
-    console.log("Questa mail non può accedere");
+  if (emailRequest == mailListCanLog[i]) {
+    console.log("La tua mail può fare il Login");
+  } else if (emailRequest == mailListCantLog[i]) {
+    console.log("La tua mail non può fare il Login");
   }
 }
-
 /* OUTPUT */
+console.log(`
+    userMail: ${userMail}
+    mailListCanLog: ${mailListCanLog}
+    mailListCantLog: ${mailListCantLog}
+    emailRequest: ${emailRequest}
+    `);
 
 /*> Gioco dei dadi
 

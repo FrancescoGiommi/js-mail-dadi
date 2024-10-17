@@ -50,8 +50,8 @@ const mailListCantLog = [
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 > Stabilire il vincitore, in base a chi fa il punteggio più alto.*/
 /* RACCOLTA DATI */
-let numPlayer = math.random() * 6;
-let numComputer = math.random() * 6;
+let numPlayer = ;
+let numComputer = ;
 
 /* PROCEDURA */
 /* ELABORAZIONE */

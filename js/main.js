@@ -32,7 +32,7 @@ const mailListCantLog = [
 /*const emailRequest = prompt("Inserisci la tua email");*/
 
 /* controllo che la mail sia nella lista delle mail che possono accedere */
-/*for (let i = 0; i != emailRequest; i++) {
+for (let i = 0; i != emailRequest; i++) {
   if (emailRequest === mailListCanLog[i]) {
     alert("Questa mail può accedere");
     console.log("Questa mail può accedere");
@@ -40,7 +40,7 @@ const mailListCantLog = [
     alert("Questa mail non può accedere");
     console.log("Questa mail non può accedere");
   }
-}*/
+}
 /* se è nella lsita delle mail che possono accedere */
 
 /* OUTPUT */
@@ -48,7 +48,8 @@ const mailListCantLog = [
 /*> Gioco dei dadi
 
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
-> Stabilire il vincitore, in base a chi fa il punteggio più alto.*/
+> Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
 /* RACCOLTA DATI */
 let numPlayer = 0;
 let numComputer = 0;
@@ -81,6 +82,11 @@ if (numPlayer > numComputer) {
 }
 
 /* OUTPUT */
+
+console.log(`
+    numPlayer: ${numPlayer}
+    numComputer: ${numComputer}
+    `);
 /*Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?

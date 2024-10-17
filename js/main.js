@@ -75,6 +75,9 @@ if (numPlayer > numComputer) {
   console.log(
     `Ha vinto il Computer perchè ${numComputer} è maggiore di ${numPlayer}`
   );
+} else if (numPlayer === numComputer) {
+  alert(`Nessun vincitore perchè c'è un pareggio`);
+  console.log(`Nessun vincitore perchè c'è un pareggio`);
 }
 
 /* OUTPUT */

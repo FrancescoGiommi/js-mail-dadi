@@ -59,9 +59,23 @@ let numComputer = 0;
 numPlayer = Math.round(Math.random() * 6);
 numComputer = Math.round(Math.random() * 6);
 console.log(numPlayer, numComputer);
-/* genero un numero random per il computer */
 
 /* controllo quale dei 2 numeri è maggiore */
+if (numPlayer > numComputer) {
+  alert(
+    `Ha vinto il Giocatore perchè ${numPlayer} è maggiore di ${numComputer}`
+  );
+  console.log(
+    `Ha vinto il Giocatore perchè ${numPlayer} è maggiore di ${numComputer}`
+  );
+} else if (numComputer > numPlayer) {
+  alert(
+    `Ha vinto il Computer perchè ${numComputer} è maggiore di ${numPlayer}`
+  );
+  console.log(
+    `Ha vinto il Computer perchè ${numComputer} è maggiore di ${numPlayer}`
+  );
+}
 
 /* OUTPUT */
 /*Prima di partire a scrivere codice poniamoci qualche domanda:

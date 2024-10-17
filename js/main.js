@@ -32,7 +32,7 @@ const mailListCantLog = [
 const emailRequest = prompt("Inserisci la tua email");
 
 /* controllo che la mail sia nella lista delle mail che possono accedere */
-for (let i = 0; i != emailRequest; i++) {
+for (let i = 0; i <= mailListCanLog.length; i++) {
   if (emailRequest == mailListCanLog[i]) {
     console.log("La tua mail può fare il Login");
   } else if (emailRequest == mailListCantLog[i]) {

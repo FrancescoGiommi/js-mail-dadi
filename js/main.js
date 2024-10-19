@@ -61,8 +61,8 @@ let numComputer = 0;
 /* PROCEDURA */
 /* ELABORAZIONE */
 /* genero un numero random per entrambi*/
-numPlayer = Math.round(Math.random() * 6);
-numComputer = Math.round(Math.random() * 6);
+numPlayer = Math.floor(Math.random() * 6) + 1;
+numComputer = Math.floor(Math.random() * 6) + 1;
 console.log(numPlayer, numComputer);
 
 /* controllo quale dei 2 numeri è maggiore */
